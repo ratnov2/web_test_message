@@ -1,0 +1,10 @@
+@import '../../assets/styles/variables';
+
+.time {
+	@include typography5;
+	line-height: 16px;
+	padding: 8px 12px;
+	background-color: $bg_active;
+	width: fit-content;
+	margin: 12px auto;
+}

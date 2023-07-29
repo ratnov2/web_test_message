@@ -1,0 +1,28 @@
+@import '../../../assets/styles/variables';
+
+.sendMessage {
+	padding: 16px 24px;
+	.chandlers {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 4px;
+		.imgUpload {
+			cursor: pointer;
+			padding: 6px;
+			&:hover {
+				background: $bg_hover;
+			}
+			label {
+				cursor: pointer;
+			}
+		}
+		.send {
+			cursor: pointer;
+			padding: 3px;
+			&:hover {
+				background: $bg_hover;
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+@import '../../assets/styles/variables';
+
+.newMessage {
+	@include typography5;
+	background: $bg_active;
+	width: 100%;
+	padding: 4px;
+	text-align: center;
+	padding: 4px;
+	color: $bg2;
+	line-height: 16px;
+	margin: 12px 0;
+}

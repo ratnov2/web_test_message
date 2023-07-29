@@ -1,0 +1,16 @@
+@import '../../assets/styles/variables';
+
+.contenteditable[placeholder]:empty:before {
+	content: attr(placeholder);
+	color: $text_60;
+}
+
+.contenteditable {
+	display: -webkit-box;
+	max-height: 40px;
+	line-height: 20px;
+	overflow: scroll;
+	&:focus-visible {
+		outline: none;
+	}
+}

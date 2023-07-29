@@ -1,0 +1,91 @@
+@import '../../assets/styles/variables';
+
+.common {
+	margin-top: 12px;
+	border-radius: 4px;
+	width: 60%;
+	position: relative;
+	padding: 0 24px;
+	.section {
+		@include typography3;
+		line-height: 20px;
+		.message {
+			transform: translateY(-3px);
+			h3 {
+				@include typography2;
+				line-height: 20px;
+			}
+			> div {
+				border-radius: 4px;
+			}
+			.time {
+				display: flex;
+				align-items: center;
+				background-color: transparent;
+				position: absolute;
+				right: 0px;
+				bottom: -20px;
+				.timeHourMinute {
+					margin-right: 2px;
+				}
+			}
+		}
+	}
+}
+
+.me {
+	margin-left: auto;
+	img {
+		display: none;
+	}
+
+	.message {
+		> h3 {
+			display: none;
+		}
+		> div {
+			padding: 8px 12px 20px 12px;
+			background-color: rgba($bg2, 0.16);
+		}
+	}
+}
+
+.other {
+	.section {
+		.message {
+			margin-left: 8px;
+			h3 {
+				margin-bottom: 4px;
+			}
+			> div {
+				background-color: $grey2;
+				padding: 8px 12px 20px 12px;
+			}
+			.read {
+				display: none;
+			}
+		}
+	}
+	img {
+		width: 32px;
+		height: 32px;
+		border-radius: 4px;
+	}
+	.section {
+		display: flex;
+	}
+}
+.is_next {
+	margin-top: 4px;
+	img {
+		display: none;
+	}
+	.section {
+		margin-left: 32px;
+		.message {
+			h3 {
+				display: none;
+			}
+		}
+	}
+}

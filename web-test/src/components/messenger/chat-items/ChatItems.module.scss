@@ -1,0 +1,12 @@
+@import '../../../assets/styles/variables';
+
+.chatItems {
+	height: 100vh;
+	box-shadow: $shadow_right;
+	overflow: scroll;
+	h1 {
+		@include typography1;
+		padding: 20px 16px;
+		line-height: 24px;
+	}
+}

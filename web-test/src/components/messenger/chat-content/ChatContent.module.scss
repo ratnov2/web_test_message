@@ -1,0 +1,17 @@
+@import '../../../../src/assets/styles/variables.scss';
+
+.chatContent {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	.header {
+		display: flex;
+		padding: 20px 16px;
+		box-shadow: $shadow_bottom;
+		align-items: center;
+		h1 {
+			@include typography1;
+			margin-left: 8px;
+		}
+	}
+}
